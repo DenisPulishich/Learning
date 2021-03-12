@@ -1,6 +1,7 @@
 package allFood;
-public  class Food {
- public int Meaning;
+
+public abstract class Food {
+    public int Meaning;
 
 }
 

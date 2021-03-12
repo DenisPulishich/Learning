@@ -1,4 +1,4 @@
 package allFood;
 
-public class Eucalyptus extends Food{
+public class Eucalyptus extends VeggieFood {
 }

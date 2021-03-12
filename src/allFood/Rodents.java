@@ -1,4 +1,4 @@
 package allFood;
 
-public class Rodents extends Meat{
+public class Rodents extends Meat {
 }

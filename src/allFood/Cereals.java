@@ -1,4 +1,4 @@
 package allFood;
 
-public class Cereals extends VeggieFood{
+public class Cereals extends VeggieFood {
 }

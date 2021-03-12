@@ -12,16 +12,26 @@ public class Coala extends Herbivore implements Run, Voice, Swim {
     }
 
     @Override
+    public void Escaping() {
+        System.out.println("Run like Usain Bolt");
+    }
+
+    @Override
     public String Voice() {
         String s2 = "Urrrr";
         return s2;
     }
 
-    public void eat (VeggieFood food){
-        if (food instanceof VeggieFood){
+    @Override
+    public void loudVoice() {
+        System.out.println("A loud scream");
+    }
+
+    public void eat(VeggieFood food) {
+        if (food instanceof VeggieFood) {
             System.out.println("Coala is eating");
-            this.satiety = satiety + food.Meaning;}
-        else{
+            this.satiety = satiety + food.Meaning;
+        } else {
             System.out.println("Eda ne podxodit");
         }
     }
@@ -29,5 +39,10 @@ public class Coala extends Herbivore implements Run, Voice, Swim {
     @Override
     public void Swim() {
         System.out.println("Coala ne plavaet");
+    }
+
+    @Override
+    public void deepSwim() {
+        System.out.println("Swimming in the deep");
     }
 }

@@ -1,7 +1,7 @@
 package allFood;
 
 
-public class Acacia extends VeggieFood{
+public class Acacia extends VeggieFood {
 
 
 }

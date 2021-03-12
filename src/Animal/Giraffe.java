@@ -1,4 +1,5 @@
 package Animal;
+
 import Animal.*;
 
 import Animal.Run;
@@ -13,8 +14,18 @@ public class Giraffe extends Herbivore implements Swim, Run, Voice {
     }
 
     @Override
+    public void Escaping() {
+        System.out.println("Run like Usain Bolt");
+    }
+
+    @Override
     public void Swim() {
         System.out.println("Giraffe is swimming");
+    }
+
+    @Override
+    public void deepSwim() {
+        System.out.println("Swimming in the deep");
     }
 
     @Override
@@ -22,11 +33,17 @@ public class Giraffe extends Herbivore implements Swim, Run, Voice {
         String s1 = "Muuu";
         return s1;
     }
-    public void eat (VeggieFood food){
-        if (food instanceof VeggieFood){
+
+    @Override
+    public void loudVoice() {
+        System.out.println("A loud scream");
+    }
+
+    public void eat(VeggieFood food) {
+        if (food instanceof VeggieFood) {
             System.out.println("Giraffe is eating");
-        this.satiety = satiety + food.Meaning;}
-        else{
+            this.satiety = satiety + food.Meaning;
+        } else {
             System.out.println("Мясо не подходит");
         }
     }

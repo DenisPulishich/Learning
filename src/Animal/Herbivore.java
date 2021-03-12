@@ -6,10 +6,9 @@ import allFood.VeggieFood;
 public abstract class Herbivore extends Animal {
     @Override
     public void eat(Food food) {
-        if(food instanceof VeggieFood){
+        if (food instanceof VeggieFood) {
             System.out.println("Herbivore is eating");
-        }
-        else {
+        } else {
             System.out.println("Мясо не подходит");
         }
 
